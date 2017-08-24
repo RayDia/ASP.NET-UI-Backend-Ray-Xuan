@@ -1,0 +1,65 @@
+﻿.mGrid {
+     width: 80%;
+     background-color: #fff;
+     margin: 5px 20px 10px 0;
+    border: solid 3px #525252;
+     border-collapse:collapse;
+    
+}
+
+    .mGrid td {
+        text-align: center;
+        padding: 20px;
+        border: solid 1px #c1c1c1;
+        color:dimgray;
+        font-family: 'Colonna MT';
+        font-size:36.8px;
+        font-weight:bold
+        
+    }
+
+.mGrid th {
+     padding: 19px 10px;
+     color: #fff;
+     background-color:black;
+     border-left: solid 2px #525252;
+     font-size: 1.68em;
+     text-align:center;
+     font-family:'Cambria Math';
+}
+
+
+
+
+.mGrid .alt {
+    background: #fcfcfc url(grd_alt.png) repeat-x top;
+}
+
+.mGrid .pgr {
+    background: #424242 url(grd_pgr.png) repeat-x top;
+}
+
+.mGrid .pgr table {
+    margin: 5px 0;
+}
+
+.mGrid .pgr td {
+     border-width: 0;
+   padding: 0 6px;
+    border-left: solid 1px #666;
+     font-weight: bold;
+     color: #fff;
+   line-height: 12px;
+   ;
+ 
+}
+
+.mGrid .pgr a {
+    color: #666;
+    text-decoration: none;
+}
+
+.mGrid .pgr a:hover {
+    color: #000;
+    text-decoration: none;
+}

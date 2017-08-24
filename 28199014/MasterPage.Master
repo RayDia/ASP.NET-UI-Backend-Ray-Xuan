@@ -1,0 +1,196 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="MasterPage.master.cs" Inherits="_28199014.MasterPage" %>
+
+<!DOCTYPE html>
+<script type="text/JavaScript" src="My97DatePicker/WdatePicker.js" charset="gb2312"></script>
+<html>
+<head runat="server">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <!-- Bootstrap CSS
+   ================================================== -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+
+    <!-- Animate CSS
+   ================================================== -->
+    <link rel="stylesheet" href="css/animate.min.css">
+
+    <!-- Font Icons
+   ================================================== -->
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/et-line-font.css">
+
+    <!-- Nivo Lightbox CSS
+   ================================================== -->
+    <link rel="stylesheet" href="css/nivo-lightbox.css">
+    <link rel="stylesheet" href="css/nivo_themes/default/default.css">
+
+    <!-- Owl Carousel CSS
+   ================================================== -->
+    <link rel="stylesheet" href="css/owl.theme.css">
+    <link rel="stylesheet" href="css/owl.carousel.css">
+
+    <!-- BxSlider CSS
+   ================================================== -->
+    <link rel="stylesheet" href="css/bxslider.css">
+
+    <!-- Main CSS
+   	================================================== -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- Google web font
+   ================================================== -->
+    <link href='https://fonts.googleapis.com/css?family=Raleway:700' rel='stylesheet' type='text/css'>
+
+    <!-- gridview
+   ================================================== -->
+    <link rel="stylesheet" href="css/contentTable.css" type="text/css" />
+    <style type="text/css">
+        /*li {
+            list-style: none;
+            background-color: transparent;
+            float: inherit;
+            width: 160px;
+            height: 55px;
+            font-size: 16px;
+            line-height: 20px;
+            color: black;
+            text-align: center;
+            padding: 16px;
+        }
+
+        .lilogin {
+            background-color: #D2691E;
+            visibility: hidden;
+        }
+
+        li:hover {
+            background-color: #D2691E;
+            cursor: pointer;
+        }
+
+            li:hover a {
+                visibility: visible;
+            }
+
+        .c {
+            background-color: #D2691E;
+            font-size: 16px;
+            text-align: left;
+        }
+        .font-color {
+            color: white;
+        }*/
+        .menunavigation {
+            margin: 10px;
+        }
+
+        a {
+            /*border:1px solid black;*/
+            margin: 10px;
+        }
+    </style>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <!-- Preloader section
+================================================== -->
+        <%--        <section class="preloader">
+
+            <div class="sk-rotating-plane"></div>
+
+        </section>--%>
+
+        <section class="navbar navbar-fixed-top custom-navbar" role="navigation" style="margin-bottom:50px">
+            <div class="row">
+                <div class="col-md-2">
+                    <div class="navbar-header" style="margin-left: 50px">
+                        <button class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                            <span class="icon icon-bar"></span>
+                            <span class="icon icon-bar"></span>
+                            <span class="icon icon-bar"></span>
+                        </button>
+                        <a href="#home" class="smoothScroll navbar-brand">🐱CAT😺</a>
+                    </div>
+                </div>
+                <div class="col-xs-8">
+                    <div class="menunavigation" style="margin-left: 80px">
+                        <asp:Menu StaticDisplayLevels="2" ID="menunavigation" runat="server"
+                            ForeColor="White" DataSourceID="SiteMapDataSource1" DynamicHorizontalOffset="1" Orientation="Horizontal" Font-Size="18" font-family="sheep sans">
+                        </asp:Menu>
+
+                    </div>
+                </div>
+                <div class="col-xs-2" style="margin-top: 18px">
+                    <asp:Button runat="server" class="smoothScroll btn btn-default" Text="Login" ID="BtnLogin" OnClick="BtnLogin_Click" BackColor="Transparent" BorderStyle="None" ForeColor="White"/>
+                    <asp:Button runat="server" class="smoothScroll btn btn-default" Text="Logout" OnClick="BtnLogout_Click" BackColor="Transparent" BorderStyle="None" ForeColor="White" />
+                </div>
+            </div>
+
+        </section>
+
+        <%--        <section id="contact" class="parallax-section">--%>
+        <div>
+            <%--<asp:SiteMapPath ID="SiteMapPath1" runat="server" PathSeparator="-->">
+            </asp:SiteMapPath>--%>
+
+            <asp:SiteMapDataSource ID="SiteMapDataSource1" runat="server" />
+        </div>
+        <!-- place main part -->
+        
+        <div>
+            <section id="contact" style="padding-top:0px; padding-bottom:0px">
+                <asp:ContentPlaceHolder ID="ContentPlaceHoldermainpart" runat="server">
+            </asp:ContentPlaceHolder>
+            </section>
+            
+
+        </div>
+
+        <footer style="padding-bottom:0px;padding-top:0px">
+            <div class="container" id="footer">
+                <div class="row">
+                    <asp:ContentPlaceHolder ID="ContentPlaceHolderfooter" runat="server">
+                    </asp:ContentPlaceHolder>
+                    <ul class="social-icon">
+                        <li><a href="http://users.monash.edu.au/~sgrose/msh/disclaimer.htm" class="fa fa-shield wow fadeIn" data-wow-delay="0.3s" title="monash course disclaimer"></a></li>
+                        <li><a href="mailto:xzhe0001@student.monash.edu" class="fa fa-female wow fadeIn" data-wow-delay="0.6s" title="Xuan's Email"></a></li>
+                        <li><a href="mailto:ydin0002@student.monash.edu" class="fa fa-male wow fadeIn" data-wow-delay="0.9s" title="Ray's Email"></a></li>
+                        <li><a href="https://github.com/RayDia" class="fa fa-github wow fadeIn" data-wow-delay="1.3s" title="Visit Github"></a></li>
+                        
+                        <li><a href="DisplayCode.aspx?filename=MasterPage.master" target="_blank" class="fa fa-clone wow fadeIn" data-wow-delay="1s" title="Master Page"></a></li>
+                    </ul>
+                    <p>
+                        Copyright &copy; 2017 🐱CAT😺 
+                
+                | Design: <a rel="nofollow" href="https://github.com/RayDia/ASP.NET-UI-Backend-Ray-Xuan" target="_parent">Xuan & Ray</a>
+                    </p>
+                    <a rel="nofollow" href="Acknowledge.aspx" target="_parent">Acknowledge</a>
+                </div>
+                
+            </div>
+            <asp:ContentPlaceHolder ID="ContentPlaceHolderfooterbuttom" runat="server">
+            </asp:ContentPlaceHolder>
+        </footer>
+        
+
+
+
+        <!-- Javascript 
+================================================== -->
+        <script src="js/jquery.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/smoothscroll.js"></script>
+        <script src="js/nivo-lightbox.min.js"></script>
+        <script src="js/jquery.easing-1.3.js"></script>
+        <script src="js/plugins.js"></script>
+        <script src="js/owl.carousel.min.js"></script>
+        <script src="js/jquery.parallax.js"></script>
+        <script src="js/wow.min.js"></script>
+        <script src="js/custom.js"></script>
+
+    </form>
+</body>
+</html>
+

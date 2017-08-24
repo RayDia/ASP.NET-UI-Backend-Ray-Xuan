@@ -1,0 +1,47 @@
+﻿body {
+    margin-top: 10px;
+    text-align: center;
+}
+div {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    text-align: center;
+    display: inline-block;
+    zoom: 1;
+    *display: inline; /*IE7 life-saver */
+    margin: 5px;
+    padding: 3px 10px;
+    font-size: 12px;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    border-radius: 30px;
+    background: #869791;
+    filter: Alpha(Opacity=50); /*IE7 fix*/
+    opacity: 0.5;
+}
+#table {
+    color: #FFF;
+}
+a{
+    font-family:'Cambria Math';
+
+}
+
+section #about {
+    background-image: ~/images/about-bg5.jpg;
+    height: 850px;
+    margin-top: 10px;
+    text-align: center;
+    display: inline-block;
+    zoom: 1;
+    *display: inline; /*IE7 life-saver */
+    margin: 5px;
+    padding: 3px 10px;
+    font-size: 12px;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    border-radius: 30px;
+    background: #869791;
+    filter: Alpha(Opacity=50); /*IE7 fix*/
+    opacity: 0.5;
+}

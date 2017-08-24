@@ -1,0 +1,44 @@
+﻿<%@ Master Language="C#" MasterPageFile="~/MasterPage.Master" AutoEventWireup="true" CodeBehind="Secondms.master.cs" Inherits="_28199014.Secondms" %>
+
+<asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
+</asp:Content>
+
+<asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHoldermainpart" runat="server">
+  
+        <div class="container">
+            <div class="row">
+
+                <!-- Section title
+                ================================================== -->
+                <div class="col-md-offset-2 col-md-8 col-sm-offset-2 col-sm-8" style="margin-top:100px">
+                    <div class="section-title">
+                        <asp:ContentPlaceHolder id="ContentPlaceHolderTitle" runat="server" />
+
+                        <section>
+                            <!-- bread crump -->
+                            <div>
+                                <asp:SiteMapPath ID="mappath1" runat="server" PathSeparator="-->" ForeColor="#ff8000" NodeStyle-ForeColor="#ff8000" Font-Bold="true">
+                                </asp:SiteMapPath>
+
+                                <asp:SiteMapDataSource ID="SiteMapDataSource1" runat="server" />
+                            </div>
+
+                        </section>
+                        <h1 class="heading" runat="server" id="signTitle"></h1>
+                        <hr>
+                        <p style="color:rgb(108, 105, 105);" >Shall I compare thee to a summer's day? Thou art more lovely and more temperate.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    <asp:ContentPlaceHolder id="ContentPlaceHoldermainpart" runat="server" />
+</asp:Content>
+
+<asp:Content ID="Content3" ContentPlaceHolderID="ContentPlaceHolderfooter" runat="server">
+    <asp:ContentPlaceHolder id="ContentPlaceHolderfooter" runat="server" />
+</asp:Content>
+
+<asp:Content ID="Content4" ContentPlaceHolderID="ContentPlaceHolderfooterbuttom" runat="server">
+    <asp:ContentPlaceHolder id="ContentPlaceHolderfooterbuttom" runat="server" />
+</asp:Content>
+
