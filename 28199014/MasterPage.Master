@@ -123,8 +123,8 @@
                     </div>
                 </div>
                 <div class="col-xs-2" style="margin-top: 18px">
-                    <asp:Button runat="server" class="smoothScroll btn btn-default" Text="Login" ID="BtnLogin" OnClick="BtnLogin_Click" BackColor="Transparent" BorderStyle="None" ForeColor="White"/>
-                    <asp:Button runat="server" class="smoothScroll btn btn-default" Text="Logout" OnClick="BtnLogout_Click" BackColor="Transparent" BorderStyle="None" ForeColor="White" />
+                    <asp:Button runat="server" class="smoothScroll btn btn-default" Text="Login" ID="BtnLogin" OnClick="BtnLogin_Click" BackColor="Transparent" BorderStyle="None" ForeColor="White" Font-Bold="true" Font-Size="16px"/>
+                    <asp:Button runat="server" class="smoothScroll btn btn-default" Text="Logout" OnClick="BtnLogout_Click" BackColor="Transparent" BorderStyle="None" ForeColor="White" Font-Bold="true" Font-Size="16px"/>
                 </div>
             </div>
 

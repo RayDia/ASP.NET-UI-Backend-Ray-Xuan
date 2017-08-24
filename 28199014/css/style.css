@@ -353,7 +353,7 @@ hr {
 /* work section styles
 /* ========================================== */
 #work {
-    background: url('../images/about-bg6.jpg') 50% 0 repeat-y fixed;
+    background: url('../images/about-bg7.jpg') 50% 0 repeat-y fixed;
 }
 #work .col-md-4 {
   display: block;
@@ -379,7 +379,7 @@ hr {
 /* about section styles
 /* ========================================== */
 #about {
-  background: url('../images/about-bg6.jpg') 50% 0 repeat-y fixed;
+  background: url('../images/about-bg7.jpg') 50% 0 repeat-y fixed;
   -webkit-background-size: cover;
   background-size: cover;
   background-position: center;
@@ -596,7 +596,7 @@ figure.effect-zoe:hover p.icon-links a:first-child {
 /* plan section styles
 /* ========================================== */
 #plan {
-  background: url('../images/plan-bg6.jpg') 50% 0 repeat-y fixed;
+  background: url('../images/plan-bg7.jpg') 50% 0 repeat-y fixed;
   -webkit-background-size: cover;
   background-size: cover;
   background-position: center;
@@ -654,11 +654,11 @@ figure.effect-zoe:hover p.icon-links a:first-child {
 /* contact section styles
 /* ========================================== */
 #contact {
-  background: url('../images/about-bg6.jpg') 50% 0 repeat-y fixed;
-  -webkit-background-size: cover;
-  background-size: cover;
-  background-position: center;
-  color: #ffffff;
+    background: url('../images/about-bg8.jpg') 50% 0 no-repeat fixed;
+    -webkit-background-size: cover;
+    background-size: cover;
+    background-position: center;
+    color: #ffffff;
 }
 #contact .medium-icon {
   color: #ffa400;
@@ -881,4 +881,23 @@ footer h2 {
   h5 {
     font-size: 11px;
   }
+}
+
+
+/*doc background*/
+#background {
+    background: url('../images/doc-bg.jpg') 50% 0 repeat-y fixed;
+    -webkit-background-size: cover;
+    background-size: cover;
+    background-position: center;
+    color: #ffffff;
+}
+
+select{
+    width:517px;
+    height:54px;
+}
+#d12 {
+    width: 517px;
+    height: 54px;
 }

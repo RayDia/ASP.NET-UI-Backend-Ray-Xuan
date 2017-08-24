@@ -2,12 +2,11 @@
 
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHoldermainpart" runat="server">
     <div class="container">
-        <div class="row">
             <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:ConnectionString %>" SelectCommand="SELECT * FROM [User]" ProviderName="System.Data.SqlServerCe.4.0"></asp:SqlDataSource>
 
             <!-- Contact form section
                 ================================================== -->
-            <div class="col-md-offset-1 col-md-10 col-sm-12">
+            <div class=" col-lg-12 col-sm-12" style="padding-left:0px; margin-left:0px">
                 <div class="col-lg-12">
                     <div class="col-md-6 col-sm-12">
                         <h5 class="wow bounceIn" style="color: rgb(221, 97, 42); font-size: 19px">USER NAME</h5>
@@ -84,41 +83,23 @@
                         <asp:RequiredFieldValidator ControlToValidate="address" Text="The address field is required!" runat="server" ForeColor="Red" />
                     </div>
 
-
-                    <div class="row">
                         <!--Birthday-->
                         <div class="col-md-6 col-sm-12">
                             <h5 class="wow bounceIn" style="color: rgb(221, 97, 42); font-size: 19px">BIRTHDAY</h5>
                         </div>
-                        <div class="col-md-3 col-sm-12">
-                            <asp:TextBox runat="server" ID="d12" type="text" BackColor="Transparent" onfocus="WdatePicker({lang:'eng'})" Font-Size="18px" ForeColor="Black" Font-Bold="true" />
+                        <div class="col-md-6 col-sm-12">
+                            <asp:TextBox runat="server" ID="d12" type="text" BackColor="Transparent" onfocus="WdatePicker({lang:'eng'})" Font-Size="18px" ForeColor="Black" Font-Bold="true" BorderStyle="Solid" BorderWidth="1px"/>
                             <asp:RequiredFieldValidator ControlToValidate="d12" Text="Empty Birthday!" runat="server" ForeColor="Red" />
                             <asp:RangeValidator ControlToValidate="d12" MinimumValue="1917-01-01" 
                                 MaximumValue="2017-12-13" runat="server" ErrorMessage="Please input correct age!"></asp:RangeValidator>
                         </div>
-                    </div>
-                    <div class="row">
-                        <!--cat fur-->
-                        <div class="col-md-2" style="margin-left: 150px">
-                            <h5 class="wow bounceIn" style="color: rgb(221, 97, 42); font-size: 19px">FUR TYPE</h5>
-                        </div>
-                        <div class="col-md-2" style="margin-left: 150px">
-                            <asp:DropDownList ID="furDropDownList" runat="server" BackColor="Transparent" Style="color: black">
-                                <asp:ListItem> </asp:ListItem>
-                                <asp:ListItem>Hairless</asp:ListItem>
-                                <asp:ListItem>Shorthair</asp:ListItem>
-                                <asp:ListItem>Longhair</asp:ListItem>
-                            </asp:DropDownList>
-                            <asp:RequiredFieldValidator ControlToValidate="furDropDownList" Text="Select None!" runat="server" ForeColor="Red" />
-                        </div>
-                    </div>
                     <div class="row">
                         <!--cat size-->
-                        <div class="col-md-6 col-sm-12">
+                        <div class="col-md-2" style="margin-left:200px">
                             <h5 class="wow bounceIn" style="color: rgb(221, 97, 42); font-size: 19px">CAT SIZE</h5>
                         </div>
-                        <div class="col-md-3 col-sm-12">
-                            <asp:DropDownList ID="sizeDropDownList" runat="server" BackColor="Transparent" Style="color: black">
+                        <div class="col-md-7 pull-right">
+                            <asp:DropDownList ID="sizeDropDownList" runat="server" BackColor="Transparent" Style="color: black; border:1px solid black; margin-left:-4px" CssClass="pull-right">
                                 <asp:ListItem> </asp:ListItem>
                                 <asp:ListItem>  Small    </asp:ListItem>
                                 <asp:ListItem>  Medium   </asp:ListItem>
@@ -128,12 +109,30 @@
                         </div>
                     </div>
                     <div class="row">
+                        <!--cat fur-->
+                        <div class="col-md-2" style="margin-left:200px">
+                            <h5 class="wow bounceIn" style="color: rgb(221, 97, 42); font-size: 19px">FUR TYPE</h5>
+                        </div>
+                        <div class="col-md-7 pull-right ">
+                            <asp:DropDownList ID="furDropDownList" runat="server" BackColor="Transparent" Style="color: black; border:1px solid black" CssClass="pull-right">
+                                <asp:ListItem> </asp:ListItem>
+                                <asp:ListItem>Hairless</asp:ListItem>
+                                <asp:ListItem>Shorthair</asp:ListItem>
+                                <asp:ListItem>Longhair</asp:ListItem>
+                            </asp:DropDownList>
+                            <asp:RequiredFieldValidator ControlToValidate="furDropDownList" Text="Select None!" runat="server" ForeColor="Red" />
+                        </div>
+                    </div>
+                        
+                    <br />
+                    
+                        
                         <!--pets keeping experience-->
-                        <div class="col-md-6 col-sm-12">
+                        <div class="col-md-6">
                             <h5 class="wow bounceIn" style="color: rgb(221, 97, 42); font-size: 19px">EVER RASIED PETS?</h5>
                            
                         </div>
-                        <div class="col-md-6 col-sm-12">
+                        <div class="col-md-6">
 
                             <asp:RadioButtonList ID="petkeepRadioButtonList" runat="server" BackColor="Transparent" RepeatDirection="Horizontal" Font-Size="18px" ForeColor="Black" Font-Bold="true">
                                 <asp:ListItem>true</asp:ListItem>
@@ -141,20 +140,17 @@
                             </asp:RadioButtonList>
                              <asp:RequiredFieldValidator ControlToValidate="petkeepRadioButtonList" Text="Please confirm your pets keeping experience !"  runat="server" ForeColor="Red" />
                         </div>
-                    </div>
-                    <div class="row">
                         <!--gemder-->
-                        <div class="col-md-6 col-sm-12">
+                        <div class="col-md-6">
                             <h5 class="wow bounceIn" style="color: rgb(221, 97, 42); font-size: 19px">GENDER</h5>
                         </div>
-                        <div class="col-md-3 col-sm-12">
+                        <div class="col-md-6">
                             <asp:RadioButtonList ID="genderRadioButtonList" runat="server" BackColor="Transparent" RepeatDirection="Horizontal" Font-Size="18px" ForeColor="Black" Font-Bold="true">
                                 <asp:ListItem>F</asp:ListItem>
                                 <asp:ListItem>M</asp:ListItem>
                             </asp:RadioButtonList>
                             <asp:RequiredFieldValidator ControlToValidate="genderRadioButtonList" Text="empty!" runat="server" ForeColor="Red" />
                         </div>
-                    </div>
 
                     <!--try upload photo-->
                     <div class="col-md-12 col-sm-12">
@@ -194,7 +190,6 @@
             </div>
 
         </div>
-    </div>
 </asp:Content>
 <asp:Content ID="Content3" ContentPlaceHolderID="ContentPlaceHolderfooter" runat="server">
     <!-- Footer section

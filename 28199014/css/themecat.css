@@ -45,3 +45,10 @@ section #about {
     filter: Alpha(Opacity=50); /*IE7 fix*/
     opacity: 0.5;
 }
+#contact {
+    background: url('../images/about-bg6.jpg') 50% 0 repeat-y fixed;
+    -webkit-background-size: cover;
+    background-size: cover;
+    background-position: center;
+    color: #ffffff;
+}

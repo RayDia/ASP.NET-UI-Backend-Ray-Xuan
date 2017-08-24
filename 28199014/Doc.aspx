@@ -3,7 +3,7 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHoldermainpart" runat="server">
-    <section  class="parallax-section" style="background-color:gainsboro">
+    <section  class="parallax-section" >
         <div class="container">
             <div class="row">
 
@@ -65,6 +65,9 @@
                         </li>
                         <li style="text-align:left">
                             <a href="#dc2-9">2.9 Calendar</a>
+                        </li>
+                        <li style="text-align:left">
+                            <a href="#dc2-10">2.10 Error Pages</a>
                         </li>
                     </ul>
                 </ul>
@@ -166,11 +169,11 @@
 
                 <h3 id="dc2-4" style="text-align:left">2.4 Login System</h3>
                 <p>
-                    <img src="Documentation/Signin.png" style="width: 64%; margin-left: -50px" />
+                    <img src="Documentation/Signin.png" style="width: 75%; margin-left: 120px" />
                 </p>
 
                 <h3 id="dc2-5" style="text-align:left">2.5 About Us</h3>
-                <p>Some static pages, just show below.</p>
+                <p>Some static pages, just show below. Here we use another theme to display the different view.</p>
                 <img src="Documentation/AboutUs.png" style="width: 64%; margin-left: -50px" />
                 <br />
                 <img src="Documentation/OutHistory.png" style="width: 64%; margin-left: -50px" />
@@ -202,13 +205,22 @@
 
                 <h3 id="dc2-8" style="text-align:left">2.8 Email</h3>
                 <p>
-                    <img src="Documentation/email.png" style="width: 82%; margin-left: 220px" />
+                    <img src="Documentation/email.png" style="width: 85%; margin-left: 250px" />
                 </p>
 
                 <h3 id="dc2-9" style="text-align:left">2.9 Calender</h3>
                 <p>
                     <img src="Documentation/Calendar.png" style="width: 30%; margin-left: 30px" />
                 </p>
+
+                <h3 id="dc2-10" style="text-align:left">2.10 Error Pages</h3>
+                <p>When the request failed, the page will jump to error pages. These pages also provide the button to return to HomePage</p>
+            
+                <img src="Documentation/404notfound.png" style="width:65%; margin-left:-20px"/>
+                <br />
+                <img src="Documentation/error.png" style="width:65%; margin-left:-20px"/>
+                <br />
+
             </div>
     </section>
 </asp:Content>

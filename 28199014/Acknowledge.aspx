@@ -61,12 +61,16 @@
 
             <h3>Background Images</h3>
             <ul>
-                <li>For Registration Page
+                <li>For Registration Page (theme1)
+                    <asp:HyperLink runat="server" NavigateUrl="https://mir-s3-cdn-cf.behance.net/project_modules/fs/b3b89755227885.597b6f4156791.png" Text="https://mir-s3-cdn-cf.behance.net/project_modules/fs/b3b89755227885.597b6f4156791.png" />
+                </li>
+                <li>For Registration Page (theme2)
                     <asp:HyperLink runat="server" NavigateUrl="http://img15.3lian.com/2015/f2/37/d/4.jpg" Text="http://img15.3lian.com/2015/f2/37/d/4.jpg" />
                 </li>
                 <li>For DiaplayCode Page
                     <asp:HyperLink runat="server" NavigateUrl="http://www.zcool.com.cn/work/ZMTY2MzQ0OTI=.html?switchPage=on" Text="http://www.zcool.com.cn/work/ZMTY2MzQ0OTI=.html?switchPage=on" />
                 </li>
+                
             </ul>
 
             <h3>Products Images</h3>

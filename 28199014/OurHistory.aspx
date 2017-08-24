@@ -10,9 +10,9 @@
 
                 <div class="col-md-6 col-sm-12" style="margin-left:300px">
                     <h2 style="color:black">🐱CAT😺</h2>
-                    <p >🐱CAT😺 is functional and awesome web by <a rel="nofollow" href="Email.aspx" target="_parent">Ray and Xuan</a>. </p>
+                    <p >🐱CAT😺 is a functional web designed by <a rel="nofollow" href="Email.aspx" target="_parent">Ray and Xuan</a>. </p>
                     <p style="color:rgb(108, 105, 105); font-size:18px">
-                        is founded in August, 2017. The founders: Ray and Xuan are both ITS students of SEU-Monash Joint Graduate School. 
+                        This web is founded in August, 2017. The founders: Ray and Xuan are both ITS students of SEU-Monash Joint Graduate School. 
                         The original intention of founding CAT is to provide a service about cats for all cat lover.
                         Our company tries to collect all kinds of cats from all over the world, including longhair cats, shorthair cats and even hairless cats. 
                         We hope that anyone who visit our website could find their favorite breeds and obtain their new family member.
